@@ -22,7 +22,7 @@ def Compare_Signals_Filter(file_name,Your_indices,Your_samples):
     print(file_name)
     print("\n")
     if (len(expected_samples)!=len(Your_samples)) and (len(expected_indices)!=len(Your_indices)):
-        print("Test case failed, your signal have different length from the expected one")
+        print(f"Test case failed, your signal have different length from the expected one sampex {len(expected_samples) } mylen: {len(Your_samples) }  " )
         return
     for i in range(len(Your_indices)):
         if(Your_indices[i]!=expected_indices[i]):
